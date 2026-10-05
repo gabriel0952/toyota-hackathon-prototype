@@ -1,9 +1,12 @@
+// Records the fixture walkthrough used in the proposal video (webm + chapter screenshots).
+// Start a fixture server first: pnpm dev --port 4180
+// Usage: node scripts/capture-proposal-video.mjs [output-dir]
 import { chromium } from '@playwright/test'
 import { mkdir, writeFile } from 'node:fs/promises'
 import { resolve } from 'node:path'
 
 const base = 'http://127.0.0.1:4180'
-const output = resolve(process.argv[2] ?? '../docs/影片素材/prototype-2026-09-25-v2')
+const output = resolve(process.argv[2] ?? 'artifacts/proposal-video')
 await mkdir(output, { recursive: true })
 
 const browser = await chromium.launch({ headless: true })

@@ -6,13 +6,17 @@
   "scripts": {
     "dev": "vite --config vite.config.ts",
     "build": "tsc -b && vite build --config vite.config.ts",
-    "preview": "vite preview",
+    "preview": "vite preview --config vite.config.ts",
     "lint": "eslint .",
     "typecheck": "tsc -b --pretty false",
     "test": "vitest run",
     "test:e2e": "playwright test",
     "test:e2e:update": "playwright test --update-snapshots",
     "dev:api": "VITE_DATA_PROVIDER=api vite --config vite.config.ts --port 4174 --strictPort",
+    "dev:backend": "cd services/decision-api && LOCAL_DEMO=1 .venv/bin/python -m uvicorn decision_api.app:app --host 127.0.0.1 --port 8000",
+    "dev:full": "bash scripts/dev-full.sh",
+    "setup:api": "python3 -m venv services/decision-api/.venv && services/decision-api/.venv/bin/python -m pip install -r services/decision-api/requirements.lock",
+    "test:api": "cd services/decision-api && .venv/bin/python -m pytest -q",
     "test:e2e:api": "playwright test --config playwright.api.config.ts"
   },
   "dependencies": {

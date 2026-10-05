@@ -73,8 +73,8 @@
 
 Toyota 官方規配來源：[完整規配](https://www.toyota.com.tw/showroom/bZ4X/fullsepc.aspx)、[展示頁](https://www.toyota.com.tw/showroom/bZ4X/)。manifest 記錄公開引用、內容 hash、Codex 技術核對者與 30 天內部複核期限；不是官方簽章／法定有效期限。
 
-Gemini 依官方 [function calling](https://ai.google.dev/gemini-api/docs/function-calling) 與 [pricing](https://ai.google.dev/gemini-api/docs/pricing)，使用者確認無付費帳務。費用上限皆 0、最多 4 輪／8 工具／12000 tokens／20 秒；每輪輸出最多 1024。只有公開且允許模型處理的官方 claim、來源 coverage/hash 與動作代碼傳給模型，不含問卷、精確位置或顧問筆記。實際 4 次生成、3165 tokens；摘要見 [live evidence](phase-3-live-evidence.json)。免費額度失敗維持模板，不切換付費服務。
+Gemini 依官方 [function calling](https://ai.google.dev/gemini-api/docs/function-calling) 與 [pricing](https://ai.google.dev/gemini-api/docs/pricing)，使用者確認無付費帳務。費用上限皆 0、最多 4 輪／8 工具／12000 tokens／20 秒；每輪輸出最多 1024。只有公開且允許模型處理的官方 claim、來源 coverage/hash 與動作代碼傳給模型，不含問卷、精確位置或顧問筆記。實際 4 次生成、3165 tokens；摘要見 [live evidence](../phase-3-live-evidence.json)。免費額度失敗維持模板，不切換付費服務。
 
 ## 提案負責人人工檢核（2026-09-23）
 
-提案負責人本人於本任務對話確認：「我本人今天已完成檢核 資料正確且僅限展示」。檢核範圍為台灣 bZ4X 202510 A 車規與 TPE1773 內湖試點候選；完整記錄見 [demo-human-review](../services/decision-api/knowledge/demo-human-review.json)。真實 TDX 標準化快照 `source-425be2dca1d2940005c5d40731f2c55228fe5eda1d39c34d8b4cf055158e71cf`，取得於 2026-09-23T09:08:24.634232Z，原始快照保存在本機忽略版控區。此人工聲明沒有現場照片、營運商確認或外部授權文件，因此只核准本次展示資料與候選描述。
+提案負責人本人於本任務對話確認：「我本人今天已完成檢核 資料正確且僅限展示」。檢核範圍為台灣 bZ4X 202510 A 車規與 TPE1773 內湖試點候選；完整記錄見 [demo-human-review](../../services/decision-api/knowledge/demo-human-review.json)。真實 TDX 標準化快照 `source-425be2dca1d2940005c5d40731f2c55228fe5eda1d39c34d8b4cf055158e71cf`，取得於 2026-09-23T09:08:24.634232Z，原始快照保存在本機忽略版控區。此人工聲明沒有現場照片、營運商確認或外部授權文件，因此只核准本次展示資料與候選描述。
