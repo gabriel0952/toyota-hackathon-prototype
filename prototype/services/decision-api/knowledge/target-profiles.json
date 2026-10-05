@@ -1,0 +1,21 @@
+{
+  "schemaVersion": "profiles-1",
+  "profiles": [
+    {
+      "id": "toyota-tw-bz4x-202510-a",
+      "market": "TW",
+      "model": "bZ4X",
+      "specificationCode": "TOYOTA bZ4X 202510 A",
+      "applicableProductionFrom": "2025-10-01",
+      "reviewStatus": "reviewed",
+      "reviewedBy": "提案負責人（使用者本人；對話確認 2026-09-23，僅限展示）",
+      "acConnector": "SAE_J1772",
+      "dcConnector": "CCS1",
+      "claimIds": [
+        "tw-bz4x-spec-applicability-202510-a",
+        "tw-bz4x-connector-page-review"
+      ],
+      "contentHash": "29ed7c6ef487a2b38e018c6a4995c2ea11ba81ab4108fcbddb9c0321d0f04090"
+    }
+  ]
+}

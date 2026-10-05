@@ -1,0 +1,48 @@
+{
+  "schemaVersion": "demo-human-review-1",
+  "attestedAtLocalDate": "2026-09-23",
+  "attestor": "提案負責人（使用者本人；姓名未提供）",
+  "attestation": "我本人今天已完成檢核 資料正確且僅限展示",
+  "attestationSource": "本任務使用者對話；無獨立現場或營運商證明",
+  "scope": "內湖試點展示；不作正式營運或現場空位保證",
+  "vehicle": {
+    "profileId": "toyota-tw-bz4x-202510-a",
+    "specificationCode": "TOYOTA bZ4X 202510 A",
+    "applicableProductionFrom": "2025-10-01",
+    "acConnector": "SAE_J1772",
+    "dcConnector": "CCS1",
+    "officialSources": [
+      "https://www.toyota.com.tw/showroom/bZ4X/",
+      "https://www.toyota.com.tw/showroom/bZ4X/fullsepc.aspx"
+    ],
+    "legacySeed": "v0.2 CCS2 seed remains historical fixture, not used in v0.3"
+  },
+  "station": {
+    "id": "TPE1773",
+    "name": "臺北市內湖區新湖國民小學活動中心地下停車場",
+    "normalizedSnapshotId": "source-425be2dca1d2940005c5d40731f2c55228fe5eda1d39c34d8b4cf055158e71cf",
+    "sampleRetrievedAt": "2026-09-23T09:08:24.634232Z",
+    "sourceUpdatedAt": "2026-09-23T12:00:00+08:00",
+    "coverage": "partial",
+    "areaCode": "63000100",
+    "acConnector": "SAE_J1772",
+    "displayWindows": [
+      "day",
+      "night"
+    ],
+    "rawDatasetReferences": [
+      "https://data.gov.tw/dataset/170220",
+      "https://data.gov.tw/dataset/170222"
+    ],
+    "sourceAccess": "TDX credentials used for authorized local API retrieval; raw/normalized snapshots retained in local ignored storage",
+    "useLimit": "展示候選；出發前仍需向場站確認時段、接頭及空位"
+  },
+  "result": "accepted_for_demo_only",
+  "notEstablished": [
+    "現場實地查驗",
+    "即時可用空位",
+    "營運商承諾",
+    "正式資料再散布權",
+    "Toyota 或 TDX 官方核准"
+  ]
+}

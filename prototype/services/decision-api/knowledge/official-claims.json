@@ -1,0 +1,60 @@
+{
+  "schemaVersion": "claims-1",
+  "claims": [
+    {
+      "id": "tw-bz4x-spec-applicability-202510-a",
+      "topic": "bz4x",
+      "profileIds": [
+        "toyota-tw-bz4x-202510-a"
+      ],
+      "market": "TW",
+      "text": "台灣展示頁標示規配表版本 TOYOTA bZ4X 202510 A，適用 2025 年 10 月 1 日起生產車輛。",
+      "keywords": [
+        "規格",
+        "適用",
+        "bZ4X"
+      ],
+      "origin": "https://www.toyota.com.tw/showroom/bZ4X/",
+      "locator": "頁尾規配表版本與適用日期",
+      "retrievedAt": "2026-09-23T00:10:48.739166Z",
+      "sourceUpdatedAt": null,
+      "validUntil": "2026-10-23T00:10:48.739166Z",
+      "reviewStatus": "reviewed",
+      "reviewedBy": "提案負責人（使用者本人；對話確認 2026-09-23，僅限展示）",
+      "allowedRoles": [
+        "driver",
+        "advisor"
+      ],
+      "externalModelAllowed": true,
+      "contentHash": "a8fc90fbf1a01633e92451ad8dd8ee3864f4332d6a977e3114897087f560840e"
+    },
+    {
+      "id": "tw-bz4x-connector-page-review",
+      "topic": "bz4x",
+      "profileIds": [
+        "toyota-tw-bz4x-202510-a"
+      ],
+      "market": "TW",
+      "text": "台灣 bZ4X 完整規配頁列出直流 CCS1、交流 SAE J1772 充電孔。",
+      "keywords": [
+        "接頭",
+        "充電",
+        "CCS1",
+        "SAE J1772"
+      ],
+      "origin": "https://www.toyota.com.tw/showroom/bZ4X/fullsepc.aspx",
+      "locator": "完整規配：直流與交流充電孔規格；由展示頁連至此規配頁",
+      "retrievedAt": "2026-09-23T00:10:48.739166Z",
+      "sourceUpdatedAt": null,
+      "validUntil": "2026-10-23T00:10:48.739166Z",
+      "reviewStatus": "reviewed",
+      "reviewedBy": "提案負責人（使用者本人；對話確認 2026-09-23，僅限展示）",
+      "allowedRoles": [
+        "driver",
+        "advisor"
+      ],
+      "externalModelAllowed": true,
+      "contentHash": "6a092501922f0fafd0b256a03f5847032440f6e601801ee00517d98089e15e26"
+    }
+  ]
+}

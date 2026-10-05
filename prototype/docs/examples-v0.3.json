@@ -1,0 +1,762 @@
+{
+  "notice": "Synthetic owner and IDs; recorded public TDX cache, not current availability. Template mode; no network or LLM.",
+  "answerRequest": {
+    "expectedRevision": 0,
+    "fields": {
+      "vehicle": {
+        "value": "RAV4",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "distance": {
+        "value": 18,
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "tripFrequency": {
+        "value": "幾乎沒有",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "homeCharging": {
+        "value": "available",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "workCharging": {
+        "value": "unavailable",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "installAssessment": {
+        "value": "failed",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "home": {
+        "value": "台北市內湖區",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "chargingWindow": {
+        "value": "day",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "monthlyMileage": {
+        "value": 1200,
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "monthlyCost": {
+        "value": 4800,
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      }
+    }
+  },
+  "evaluationRequest": {
+    "contractVersion": "0.3",
+    "targetVehicleProfileId": "toyota-tw-bz4x-202510-a",
+    "sessionId": "session-a8c1e593d0f04d7c840ee5fec9cbd52e",
+    "expectedRevision": 1
+  },
+  "driverResponse": {
+    "contractVersion": "0.3",
+    "ruleVersion": "grounded-engineering-0.3-0ecad182087a",
+    "dataSnapshotIds": [
+      "source-f037284f1e80c43718fdfcedd80651c0b130283fb14959e23d0e4b7d933320ed",
+      "source-eebd650e07c8ef1853d9df2ba11389fa310026a788c0bf7ab1116aea5c70d0da",
+      "source-2ab87e90bc2a9e37ec5ddb5072f66f16515ceb52f9330e855e426e1959b2b69e"
+    ],
+    "evaluationStatus": "assessed",
+    "path": "green",
+    "route": "ready",
+    "pathLabel": "可立即轉電",
+    "headline": "已提供的主要補電與通勤條件符合目前評估範圍",
+    "summary": "依已提交條件、官方車規與 TDX 快取評估；站點候選不代表即時有空位或完整長途可行。",
+    "completeness": 56,
+    "vehicle": "RAV4",
+    "ownershipYears": 0,
+    "resistances": [
+      {
+        "id": "public",
+        "title": "公共備援",
+        "score": 65,
+        "status": "pending",
+        "description": "台北市內湖區，符合接頭與時段 1 站（TDX 候選，非即時空位）",
+        "evidence": [
+          "台北市內湖區，符合接頭與時段 1 站（TDX 候選，非即時空位）",
+          "規則 grounded-engineering-0.3-0ecad182087a"
+        ],
+        "improvement": "確認時段及相容主站與替代站"
+      },
+      {
+        "id": "charging",
+        "title": "穩定補電",
+        "score": 10,
+        "status": "resolved",
+        "description": "住家／公司補電：可用／不可用；裝樁初評：不可用",
+        "evidence": [
+          "住家／公司補電：可用／不可用；裝樁初評：不可用",
+          "規則 grounded-engineering-0.3-0ecad182087a"
+        ],
+        "improvement": "確認主要補電安排"
+      },
+      {
+        "id": "cost",
+        "title": "能源成本",
+        "score": 10,
+        "status": "resolved",
+        "description": "每月里程 1200.0 km；費率為工程假設",
+        "evidence": [
+          "每月里程 1200.0 km；費率為工程假設",
+          "規則 grounded-engineering-0.3-0ecad182087a"
+        ],
+        "improvement": "補上里程與費率依據"
+      }
+    ],
+    "monthlyCost": {
+      "status": "estimated",
+      "min": 720,
+      "max": 1200,
+      "note": "工程假設區間；不含車價、設備、保險。油資僅作現況參考。",
+      "unit": "TWD/month",
+      "inputs": {
+        "monthlyKm": 1200.0,
+        "kwhPer100Km": 18,
+        "lossFraction": 0.1,
+        "priceLow": 3,
+        "priceHigh": 5
+      },
+      "formula": "monthlyKm × kwhPer100Km / 100 / (1-lossFraction) × price"
+    },
+    "chargingDataStatus": "no_data",
+    "plans": [
+      {
+        "name": "Plan A",
+        "title": "已提供的住家／公司補電安排",
+        "description": "依車主提交的可用條件評估。",
+        "timing": "day",
+        "purpose": "daily",
+        "stationIds": [],
+        "snapshotIds": [],
+        "limitations": [
+          "未接入導航路線資料；目的地候選不代表沿途或整段長途可行"
+        ]
+      },
+      {
+        "name": "Plan B",
+        "title": "臺北市內湖區新湖國民小學活動中心地下停車場",
+        "description": "行政區內候選，出發前仍須確認現場限制。",
+        "timing": "day",
+        "purpose": "backup",
+        "stationIds": [
+          "TPE1773"
+        ],
+        "snapshotIds": [
+          "source-f037284f1e80c43718fdfcedd80651c0b130283fb14959e23d0e4b7d933320ed"
+        ],
+        "limitations": [
+          "未接入導航路線資料；目的地候選不代表沿途或整段長途可行"
+        ]
+      }
+    ],
+    "journeys": [
+      {
+        "label": "通勤",
+        "title": "每日往返 36 km",
+        "detail": "長途、時段及備援依上述證據檢核"
+      }
+    ],
+    "assumptions": [
+      "目標車：台灣 bZ4X TOYOTA bZ4X 202510 A",
+      "可用里程與能耗是工程假設；不以官方實驗室測試續航取代",
+      "費率區間與充電損耗是工程假設；不含設備、停車與其他服務費",
+      "未接入導航路線資料；目的地候選不代表沿途或整段長途可行"
+    ],
+    "sources": [
+      {
+        "label": "TDX 內湖充電候選（部分區域已核對）",
+        "status": "verified",
+        "updatedAt": "2026-09-22T12:00:00+08:00",
+        "snapshotId": "source-f037284f1e80c43718fdfcedd80651c0b130283fb14959e23d0e4b7d933320ed",
+        "sourceKind": "tdx",
+        "origin": "https://tdx.transportdata.tw/api/basic/v1/EV/Station/City/Taipei",
+        "retrievedAt": "2026-09-23T00:31:57.238035+00:00",
+        "sourceUpdatedAt": "2026-09-22T12:00:00+08:00",
+        "freshness": "fresh",
+        "coverage": "partial",
+        "missingFields": [
+          "district_or_station_records_unresolved"
+        ]
+      },
+      {
+        "label": "能源費率與損耗工程假設",
+        "status": "assumption",
+        "updatedAt": "",
+        "snapshotId": "source-eebd650e07c8ef1853d9df2ba11389fa310026a788c0bf7ab1116aea5c70d0da",
+        "sourceKind": "assumption",
+        "origin": "rulebook:grounded-engineering-0.3",
+        "retrievedAt": "2026-09-23T00:31:57.249016+00:00",
+        "sourceUpdatedAt": null,
+        "freshness": "unknown",
+        "coverage": "partial",
+        "missingFields": [
+          "actual_tariff",
+          "parking_fee",
+          "service_fee"
+        ]
+      },
+      {
+        "label": "Toyota 台灣 bZ4X 完整規配",
+        "status": "verified",
+        "updatedAt": "",
+        "snapshotId": "source-2ab87e90bc2a9e37ec5ddb5072f66f16515ceb52f9330e855e426e1959b2b69e",
+        "sourceKind": "official",
+        "origin": "official-profile-manifest",
+        "retrievedAt": "2026-09-23T00:31:57.252192+00:00",
+        "sourceUpdatedAt": null,
+        "freshness": "unknown",
+        "coverage": "complete",
+        "missingFields": []
+      }
+    ],
+    "recommendations": [
+      "可依此報告與顧問討論 bZ4X；仍須核對現場充電與實際行程。"
+    ],
+    "successCases": [],
+    "nextActions": [
+      {
+        "label": "諮詢充電條件",
+        "kind": "consult"
+      },
+      {
+        "label": "討論路線試駕",
+        "kind": "test-drive"
+      }
+    ],
+    "blurredLocations": [
+      "台北市內湖區",
+      "未提供區域",
+      "未提供區域"
+    ],
+    "pendingConfirmations": [],
+    "engineVersion": "grounded-rules-0.3.0",
+    "composerVersion": "grounded-composer-1",
+    "targetVehicleProfileId": "toyota-tw-bz4x-202510-a",
+    "evaluatedAt": "2026-09-23T00:31:57.249016+00:00",
+    "generationMode": "template",
+    "citations": [
+      {
+        "id": "tw-bz4x-spec-applicability-202510-a",
+        "text": "台灣展示頁標示規配表版本 TOYOTA bZ4X 202510 A，適用 2025 年 10 月 1 日起生產車輛。",
+        "origin": "https://www.toyota.com.tw/showroom/bZ4X/",
+        "locator": "頁尾規配表版本與適用日期",
+        "contentHash": "cbaf4a3170daabb7fa2b2dbf8aab5a58de681382a67977ca801edab12078460d"
+      },
+      {
+        "id": "tw-bz4x-connector-page-review",
+        "text": "台灣 bZ4X 完整規配頁列出直流 CCS1、交流 SAE J1772 充電孔。",
+        "origin": "https://www.toyota.com.tw/showroom/bZ4X/fullsepc.aspx",
+        "locator": "完整規配：直流與交流充電孔規格；由展示頁連至此規配頁",
+        "contentHash": "b4fb502152ab0bee315999458022d0283e7437f0b851230ab95c829a824cf59d"
+      }
+    ],
+    "composition": {
+      "actions": [],
+      "citations": [],
+      "explanation": [
+        "請依報告中的來源與限制確認補電安排。"
+      ]
+    },
+    "id": "report-1b366752a10247638cd72fc3c4b85959",
+    "sessionId": "session-a8c1e593d0f04d7c840ee5fec9cbd52e",
+    "reportFamilyId": "family-3ed246aa086d41d0b7cf9f87c6b30604",
+    "version": 1,
+    "createdAt": "2026-09-23T00:31:57.255023+00:00",
+    "inputRevision": 1,
+    "kind": "actual",
+    "basedOnReportId": null,
+    "changeSummary": []
+  },
+  "lineResponse": {
+    "assumptions": [
+      "目標車：台灣 bZ4X TOYOTA bZ4X 202510 A",
+      "可用里程與能耗是工程假設；不以官方實驗室測試續航取代",
+      "費率區間與充電損耗是工程假設；不含設備、停車與其他服務費",
+      "未接入導航路線資料；目的地候選不代表沿途或整段長途可行"
+    ],
+    "basedOnReportId": null,
+    "blurredLocations": [
+      "台北市內湖區",
+      "未提供區域",
+      "未提供區域"
+    ],
+    "changeSummary": [],
+    "chargingDataStatus": "no_data",
+    "citations": [
+      {
+        "contentHash": "cbaf4a3170daabb7fa2b2dbf8aab5a58de681382a67977ca801edab12078460d",
+        "id": "tw-bz4x-spec-applicability-202510-a",
+        "locator": "頁尾規配表版本與適用日期",
+        "origin": "https://www.toyota.com.tw/showroom/bZ4X/",
+        "text": "台灣展示頁標示規配表版本 TOYOTA bZ4X 202510 A，適用 2025 年 10 月 1 日起生產車輛。"
+      },
+      {
+        "contentHash": "b4fb502152ab0bee315999458022d0283e7437f0b851230ab95c829a824cf59d",
+        "id": "tw-bz4x-connector-page-review",
+        "locator": "完整規配：直流與交流充電孔規格；由展示頁連至此規配頁",
+        "origin": "https://www.toyota.com.tw/showroom/bZ4X/fullsepc.aspx",
+        "text": "台灣 bZ4X 完整規配頁列出直流 CCS1、交流 SAE J1772 充電孔。"
+      }
+    ],
+    "completeness": 56,
+    "composerVersion": "grounded-composer-1",
+    "composition": {
+      "actions": [],
+      "citations": [],
+      "explanation": [
+        "請依報告中的來源與限制確認補電安排。"
+      ]
+    },
+    "contractVersion": "0.3",
+    "createdAt": "2026-09-23T00:31:57.255023+00:00",
+    "dataSnapshotIds": [
+      "source-f037284f1e80c43718fdfcedd80651c0b130283fb14959e23d0e4b7d933320ed",
+      "source-eebd650e07c8ef1853d9df2ba11389fa310026a788c0bf7ab1116aea5c70d0da",
+      "source-2ab87e90bc2a9e37ec5ddb5072f66f16515ceb52f9330e855e426e1959b2b69e"
+    ],
+    "engineVersion": "grounded-rules-0.3.0",
+    "evaluatedAt": "2026-09-23T00:31:57.249016+00:00",
+    "evaluationStatus": "assessed",
+    "generationMode": "template",
+    "headline": "已提供的主要補電與通勤條件符合目前評估範圍",
+    "id": "report-1b366752a10247638cd72fc3c4b85959",
+    "inputRevision": 1,
+    "journeys": [
+      {
+        "detail": "長途、時段及備援依上述證據檢核",
+        "label": "通勤",
+        "title": "每日往返 36 km"
+      }
+    ],
+    "kind": "actual",
+    "monthlyCost": {
+      "formula": "monthlyKm × kwhPer100Km / 100 / (1-lossFraction) × price",
+      "inputs": {
+        "kwhPer100Km": 18,
+        "lossFraction": 0.1,
+        "monthlyKm": 1200.0,
+        "priceHigh": 5,
+        "priceLow": 3
+      },
+      "max": 1200,
+      "min": 720,
+      "note": "工程假設區間；不含車價、設備、保險。油資僅作現況參考。",
+      "status": "estimated",
+      "unit": "TWD/month"
+    },
+    "nextActions": [
+      {
+        "kind": "consult",
+        "label": "諮詢充電條件"
+      },
+      {
+        "kind": "test-drive",
+        "label": "討論路線試駕"
+      }
+    ],
+    "ownershipYears": 0,
+    "path": "green",
+    "pathLabel": "可立即轉電",
+    "pendingConfirmations": [],
+    "plans": [
+      {
+        "description": "依車主提交的可用條件評估。",
+        "limitations": [
+          "未接入導航路線資料；目的地候選不代表沿途或整段長途可行"
+        ],
+        "name": "Plan A",
+        "purpose": "daily",
+        "snapshotIds": [],
+        "stationIds": [],
+        "timing": "day",
+        "title": "已提供的住家／公司補電安排"
+      },
+      {
+        "description": "行政區內候選，出發前仍須確認現場限制。",
+        "limitations": [
+          "未接入導航路線資料；目的地候選不代表沿途或整段長途可行"
+        ],
+        "name": "Plan B",
+        "purpose": "backup",
+        "snapshotIds": [
+          "source-f037284f1e80c43718fdfcedd80651c0b130283fb14959e23d0e4b7d933320ed"
+        ],
+        "stationIds": [
+          "TPE1773"
+        ],
+        "timing": "day",
+        "title": "臺北市內湖區新湖國民小學活動中心地下停車場"
+      }
+    ],
+    "recommendations": [
+      "可依此報告與顧問討論 bZ4X；仍須核對現場充電與實際行程。"
+    ],
+    "reportFamilyId": "family-3ed246aa086d41d0b7cf9f87c6b30604",
+    "resistances": [
+      {
+        "description": "台北市內湖區，符合接頭與時段 1 站（TDX 候選，非即時空位）",
+        "evidence": [
+          "台北市內湖區，符合接頭與時段 1 站（TDX 候選，非即時空位）",
+          "規則 grounded-engineering-0.3-0ecad182087a"
+        ],
+        "id": "public",
+        "improvement": "確認時段及相容主站與替代站",
+        "score": 65,
+        "status": "pending",
+        "title": "公共備援"
+      },
+      {
+        "description": "住家／公司補電：可用／不可用；裝樁初評：不可用",
+        "evidence": [
+          "住家／公司補電：可用／不可用；裝樁初評：不可用",
+          "規則 grounded-engineering-0.3-0ecad182087a"
+        ],
+        "id": "charging",
+        "improvement": "確認主要補電安排",
+        "score": 10,
+        "status": "resolved",
+        "title": "穩定補電"
+      },
+      {
+        "description": "每月里程 1200.0 km；費率為工程假設",
+        "evidence": [
+          "每月里程 1200.0 km；費率為工程假設",
+          "規則 grounded-engineering-0.3-0ecad182087a"
+        ],
+        "id": "cost",
+        "improvement": "補上里程與費率依據",
+        "score": 10,
+        "status": "resolved",
+        "title": "能源成本"
+      }
+    ],
+    "route": "ready",
+    "ruleVersion": "grounded-engineering-0.3-0ecad182087a",
+    "sessionId": "session-a8c1e593d0f04d7c840ee5fec9cbd52e",
+    "sources": [
+      {
+        "coverage": "partial",
+        "freshness": "fresh",
+        "label": "TDX 內湖充電候選（部分區域已核對）",
+        "missingFields": [
+          "district_or_station_records_unresolved"
+        ],
+        "origin": "https://tdx.transportdata.tw/api/basic/v1/EV/Station/City/Taipei",
+        "retrievedAt": "2026-09-23T00:31:57.238035+00:00",
+        "snapshotId": "source-f037284f1e80c43718fdfcedd80651c0b130283fb14959e23d0e4b7d933320ed",
+        "sourceKind": "tdx",
+        "sourceUpdatedAt": "2026-09-22T12:00:00+08:00",
+        "status": "verified",
+        "updatedAt": "2026-09-22T12:00:00+08:00"
+      },
+      {
+        "coverage": "partial",
+        "freshness": "unknown",
+        "label": "能源費率與損耗工程假設",
+        "missingFields": [
+          "actual_tariff",
+          "parking_fee",
+          "service_fee"
+        ],
+        "origin": "rulebook:grounded-engineering-0.3",
+        "retrievedAt": "2026-09-23T00:31:57.249016+00:00",
+        "snapshotId": "source-eebd650e07c8ef1853d9df2ba11389fa310026a788c0bf7ab1116aea5c70d0da",
+        "sourceKind": "assumption",
+        "sourceUpdatedAt": null,
+        "status": "assumption",
+        "updatedAt": ""
+      },
+      {
+        "coverage": "complete",
+        "freshness": "unknown",
+        "label": "Toyota 台灣 bZ4X 完整規配",
+        "missingFields": [],
+        "origin": "official-profile-manifest",
+        "retrievedAt": "2026-09-23T00:31:57.252192+00:00",
+        "snapshotId": "source-2ab87e90bc2a9e37ec5ddb5072f66f16515ceb52f9330e855e426e1959b2b69e",
+        "sourceKind": "official",
+        "sourceUpdatedAt": null,
+        "status": "verified",
+        "updatedAt": ""
+      }
+    ],
+    "successCases": [],
+    "summary": "依已提交條件、官方車規與 TDX 快取評估；站點候選不代表即時有空位或完整長途可行。",
+    "targetVehicleProfileId": "toyota-tw-bz4x-202510-a",
+    "vehicle": "RAV4",
+    "version": 1
+  },
+  "advisorResponse": {
+    "advisorNotes": [],
+    "assumptions": [
+      "目標車：台灣 bZ4X TOYOTA bZ4X 202510 A",
+      "可用里程與能耗是工程假設；不以官方實驗室測試續航取代",
+      "費率區間與充電損耗是工程假設；不含設備、停車與其他服務費",
+      "未接入導航路線資料；目的地候選不代表沿途或整段長途可行"
+    ],
+    "basedOnReportId": null,
+    "blurredLocations": [
+      "台北市內湖區",
+      "未提供區域",
+      "未提供區域"
+    ],
+    "changeSummary": [],
+    "chargingDataStatus": "no_data",
+    "citations": [
+      {
+        "contentHash": "cbaf4a3170daabb7fa2b2dbf8aab5a58de681382a67977ca801edab12078460d",
+        "id": "tw-bz4x-spec-applicability-202510-a",
+        "locator": "頁尾規配表版本與適用日期",
+        "origin": "https://www.toyota.com.tw/showroom/bZ4X/",
+        "text": "台灣展示頁標示規配表版本 TOYOTA bZ4X 202510 A，適用 2025 年 10 月 1 日起生產車輛。"
+      },
+      {
+        "contentHash": "b4fb502152ab0bee315999458022d0283e7437f0b851230ab95c829a824cf59d",
+        "id": "tw-bz4x-connector-page-review",
+        "locator": "完整規配：直流與交流充電孔規格；由展示頁連至此規配頁",
+        "origin": "https://www.toyota.com.tw/showroom/bZ4X/fullsepc.aspx",
+        "text": "台灣 bZ4X 完整規配頁列出直流 CCS1、交流 SAE J1772 充電孔。"
+      }
+    ],
+    "completeness": 56,
+    "composerVersion": "grounded-composer-1",
+    "composition": {
+      "actions": [],
+      "citations": [],
+      "explanation": [
+        "請依報告中的來源與限制確認補電安排。"
+      ]
+    },
+    "contractVersion": "0.3",
+    "createdAt": "2026-09-23T00:31:57.255023+00:00",
+    "dataSnapshotIds": [
+      "source-f037284f1e80c43718fdfcedd80651c0b130283fb14959e23d0e4b7d933320ed",
+      "source-eebd650e07c8ef1853d9df2ba11389fa310026a788c0bf7ab1116aea5c70d0da",
+      "source-2ab87e90bc2a9e37ec5ddb5072f66f16515ceb52f9330e855e426e1959b2b69e"
+    ],
+    "engineVersion": "grounded-rules-0.3.0",
+    "evaluatedAt": "2026-09-23T00:31:57.249016+00:00",
+    "evaluationStatus": "assessed",
+    "generationMode": "template",
+    "headline": "已提供的主要補電與通勤條件符合目前評估範圍",
+    "id": "report-1b366752a10247638cd72fc3c4b85959",
+    "inputRevision": 1,
+    "journeys": [
+      {
+        "detail": "長途、時段及備援依上述證據檢核",
+        "label": "通勤",
+        "title": "每日往返 36 km"
+      }
+    ],
+    "kind": "actual",
+    "monthlyCost": {
+      "formula": "monthlyKm × kwhPer100Km / 100 / (1-lossFraction) × price",
+      "inputs": {
+        "kwhPer100Km": 18,
+        "lossFraction": 0.1,
+        "monthlyKm": 1200.0,
+        "priceHigh": 5,
+        "priceLow": 3
+      },
+      "max": 1200,
+      "min": 720,
+      "note": "工程假設區間；不含車價、設備、保險。油資僅作現況參考。",
+      "status": "estimated",
+      "unit": "TWD/month"
+    },
+    "nextActions": [
+      {
+        "kind": "consult",
+        "label": "諮詢充電條件"
+      },
+      {
+        "kind": "test-drive",
+        "label": "討論路線試駕"
+      }
+    ],
+    "ownershipYears": 0,
+    "path": "green",
+    "pathLabel": "可立即轉電",
+    "pendingConfirmations": [],
+    "plans": [
+      {
+        "description": "依車主提交的可用條件評估。",
+        "limitations": [
+          "未接入導航路線資料；目的地候選不代表沿途或整段長途可行"
+        ],
+        "name": "Plan A",
+        "purpose": "daily",
+        "snapshotIds": [],
+        "stationIds": [],
+        "timing": "day",
+        "title": "已提供的住家／公司補電安排"
+      },
+      {
+        "description": "行政區內候選，出發前仍須確認現場限制。",
+        "limitations": [
+          "未接入導航路線資料；目的地候選不代表沿途或整段長途可行"
+        ],
+        "name": "Plan B",
+        "purpose": "backup",
+        "snapshotIds": [
+          "source-f037284f1e80c43718fdfcedd80651c0b130283fb14959e23d0e4b7d933320ed"
+        ],
+        "stationIds": [
+          "TPE1773"
+        ],
+        "timing": "day",
+        "title": "臺北市內湖區新湖國民小學活動中心地下停車場"
+      }
+    ],
+    "recommendations": [
+      "可依此報告與顧問討論 bZ4X；仍須核對現場充電與實際行程。"
+    ],
+    "reportFamilyId": "family-3ed246aa086d41d0b7cf9f87c6b30604",
+    "resistances": [
+      {
+        "description": "台北市內湖區，符合接頭與時段 1 站（TDX 候選，非即時空位）",
+        "evidence": [
+          "台北市內湖區，符合接頭與時段 1 站（TDX 候選，非即時空位）",
+          "規則 grounded-engineering-0.3-0ecad182087a"
+        ],
+        "id": "public",
+        "improvement": "確認時段及相容主站與替代站",
+        "score": 65,
+        "status": "pending",
+        "title": "公共備援"
+      },
+      {
+        "description": "住家／公司補電：可用／不可用；裝樁初評：不可用",
+        "evidence": [
+          "住家／公司補電：可用／不可用；裝樁初評：不可用",
+          "規則 grounded-engineering-0.3-0ecad182087a"
+        ],
+        "id": "charging",
+        "improvement": "確認主要補電安排",
+        "score": 10,
+        "status": "resolved",
+        "title": "穩定補電"
+      },
+      {
+        "description": "每月里程 1200.0 km；費率為工程假設",
+        "evidence": [
+          "每月里程 1200.0 km；費率為工程假設",
+          "規則 grounded-engineering-0.3-0ecad182087a"
+        ],
+        "id": "cost",
+        "improvement": "補上里程與費率依據",
+        "score": 10,
+        "status": "resolved",
+        "title": "能源成本"
+      }
+    ],
+    "route": "ready",
+    "ruleVersion": "grounded-engineering-0.3-0ecad182087a",
+    "sessionId": "session-a8c1e593d0f04d7c840ee5fec9cbd52e",
+    "sources": [
+      {
+        "coverage": "partial",
+        "freshness": "fresh",
+        "label": "TDX 內湖充電候選（部分區域已核對）",
+        "missingFields": [
+          "district_or_station_records_unresolved"
+        ],
+        "origin": "https://tdx.transportdata.tw/api/basic/v1/EV/Station/City/Taipei",
+        "retrievedAt": "2026-09-23T00:31:57.238035+00:00",
+        "snapshotId": "source-f037284f1e80c43718fdfcedd80651c0b130283fb14959e23d0e4b7d933320ed",
+        "sourceKind": "tdx",
+        "sourceUpdatedAt": "2026-09-22T12:00:00+08:00",
+        "status": "verified",
+        "updatedAt": "2026-09-22T12:00:00+08:00"
+      },
+      {
+        "coverage": "partial",
+        "freshness": "unknown",
+        "label": "能源費率與損耗工程假設",
+        "missingFields": [
+          "actual_tariff",
+          "parking_fee",
+          "service_fee"
+        ],
+        "origin": "rulebook:grounded-engineering-0.3",
+        "retrievedAt": "2026-09-23T00:31:57.249016+00:00",
+        "snapshotId": "source-eebd650e07c8ef1853d9df2ba11389fa310026a788c0bf7ab1116aea5c70d0da",
+        "sourceKind": "assumption",
+        "sourceUpdatedAt": null,
+        "status": "assumption",
+        "updatedAt": ""
+      },
+      {
+        "coverage": "complete",
+        "freshness": "unknown",
+        "label": "Toyota 台灣 bZ4X 完整規配",
+        "missingFields": [],
+        "origin": "official-profile-manifest",
+        "retrievedAt": "2026-09-23T00:31:57.252192+00:00",
+        "snapshotId": "source-2ab87e90bc2a9e37ec5ddb5072f66f16515ceb52f9330e855e426e1959b2b69e",
+        "sourceKind": "official",
+        "sourceUpdatedAt": null,
+        "status": "verified",
+        "updatedAt": ""
+      }
+    ],
+    "successCases": [],
+    "suggestedQuestions": [
+      "請依待確認項目與車主核對，勿將初評視為施工核准。"
+    ],
+    "summary": "依已提交條件、官方車規與 TDX 快取評估；站點候選不代表即時有空位或完整長途可行。",
+    "targetVehicleProfileId": "toyota-tw-bz4x-202510-a",
+    "vehicle": "RAV4",
+    "version": 1
+  },
+  "errors": [
+    {
+      "request": {
+        "contractVersion": "0.3",
+        "targetVehicleProfileId": "unsupported",
+        "sessionId": "session-a8c1e593d0f04d7c840ee5fec9cbd52e",
+        "expectedRevision": 1
+      },
+      "status": 422,
+      "response": {
+        "detail": [
+          {
+            "type": "literal_error",
+            "loc": [
+              "body",
+              "targetVehicleProfileId"
+            ],
+            "msg": "Input should be 'toyota-tw-bz4x-202510-a'",
+            "input": "unsupported",
+            "ctx": {
+              "expected": "'toyota-tw-bz4x-202510-a'"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

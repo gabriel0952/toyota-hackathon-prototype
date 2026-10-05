@@ -1,0 +1,179 @@
+{
+  "date": "2026-09-23",
+  "smoke": {
+    "generationMode": "llm",
+    "route": "ready",
+    "metadata": {
+      "rounds": 1,
+      "tokens": 793,
+      "modelVersion": "gemini-2.5-flash",
+      "durationMs": 1207,
+      "error": null,
+      "tools": [
+        {
+          "tool": "get_vehicle_profile",
+          "version": "1",
+          "inputHash": "5477675fcf079e0f0a4bf97d623605752364f38a9daecce8ebd2dc4f39bc6ed8",
+          "snapshotId": "source-7098efb853e6546ff24cbd46a89cd68aadb8cf1d46731e6a795ff3fb81e0b4e3",
+          "durationMs": 0
+        },
+        {
+          "tool": "search_charging_candidates",
+          "version": "1",
+          "inputHash": "58aac3b11b8bf8988360f215680bcc519553948a03c413dd875b19544f594a6f",
+          "snapshotId": "source-4ea3894d3aca2f124a4c9120c77f499c12d59f93e65cde39fe32298b2a1f0e69",
+          "durationMs": 1
+        },
+        {
+          "tool": "get_cost_parameters",
+          "version": "1",
+          "inputHash": "fbb27dfae8f5550f88bbc8a40fc276b7d8b79ced00f7a8bb9713e35165693831",
+          "snapshotId": "source-592f2c44ec7f10dc99a80e9f07e255e204e8ab5bb7da87e90c694f717cbdf222",
+          "durationMs": 0
+        }
+      ]
+    },
+    "composition": {
+      "actions": [
+        {
+          "label": "諮詢充電條件",
+          "kind": "consult"
+        },
+        {
+          "label": "討論路線試駕",
+          "kind": "test-drive"
+        }
+      ],
+      "citations": [
+        {
+          "id": "tw-bz4x-spec-applicability-202510-a",
+          "text": "台灣展示頁標示規配表版本 TOYOTA bZ4X 202510 A，適用 2025 年 10 月 1 日起生產車輛。",
+          "origin": "https://www.toyota.com.tw/showroom/bZ4X/",
+          "locator": "頁尾規配表版本與適用日期",
+          "contentHash": "cbaf4a3170daabb7fa2b2dbf8aab5a58de681382a67977ca801edab12078460d"
+        },
+        {
+          "id": "tw-bz4x-connector-page-review",
+          "text": "台灣 bZ4X 完整規配頁列出直流 CCS1、交流 SAE J1772 充電孔。",
+          "origin": "https://www.toyota.com.tw/showroom/bZ4X/fullsepc.aspx",
+          "locator": "完整規配：直流與交流充電孔規格；由展示頁連至此規配頁",
+          "contentHash": "b4fb502152ab0bee315999458022d0283e7437f0b851230ab95c829a824cf59d"
+        }
+      ],
+      "explanation": [
+        "請依報告中的來源與限制確認補電安排。",
+        "可先改善報告列出的條件，再提交重新評估。"
+      ]
+    },
+    "costUsd": 0,
+    "billingBasis": "User confirmed Free tier without paid billing; no paid fallback",
+    "sourceIds": [
+      "source-4ea3894d3aca2f124a4c9120c77f499c12d59f93e65cde39fe32298b2a1f0e69",
+      "source-592f2c44ec7f10dc99a80e9f07e255e204e8ab5bb7da87e90c694f717cbdf222",
+      "source-7098efb853e6546ff24cbd46a89cd68aadb8cf1d46731e6a795ff3fb81e0b4e3"
+    ]
+  },
+  "persistedGeminiTraces": [
+    {
+      "rounds": 1,
+      "tokens": 793,
+      "modelVersion": "gemini-2.5-flash",
+      "durationMs": 1174,
+      "error": null,
+      "tools": [
+        {
+          "tool": "get_vehicle_profile",
+          "version": "1",
+          "inputHash": "5477675fcf079e0f0a4bf97d623605752364f38a9daecce8ebd2dc4f39bc6ed8",
+          "snapshotId": "source-63d345ff6d8255a9c077d99a428caaa893556c1475c1c4a6bd46de2398a6c805",
+          "durationMs": 0,
+          "error": null
+        },
+        {
+          "tool": "search_charging_candidates",
+          "version": "1",
+          "inputHash": "58aac3b11b8bf8988360f215680bcc519553948a03c413dd875b19544f594a6f",
+          "snapshotId": "source-4ea3894d3aca2f124a4c9120c77f499c12d59f93e65cde39fe32298b2a1f0e69",
+          "durationMs": 1,
+          "error": null
+        },
+        {
+          "tool": "get_cost_parameters",
+          "version": "1",
+          "inputHash": "fbb27dfae8f5550f88bbc8a40fc276b7d8b79ced00f7a8bb9713e35165693831",
+          "snapshotId": "source-28a425a4e4e388be83e8e0ee32d513b0ec80cb31c363210e6ff72a8aa66e9eaa",
+          "durationMs": 0,
+          "error": null
+        }
+      ]
+    },
+    {
+      "rounds": 1,
+      "tokens": 786,
+      "modelVersion": "gemini-2.5-flash",
+      "durationMs": 1191,
+      "error": null,
+      "tools": [
+        {
+          "tool": "get_vehicle_profile",
+          "version": "1",
+          "inputHash": "5477675fcf079e0f0a4bf97d623605752364f38a9daecce8ebd2dc4f39bc6ed8",
+          "snapshotId": "source-27854397cc7a2c38235d2fbf43d8465e25c69353617d89be2f3fc7dd4de7c872",
+          "durationMs": 0,
+          "error": null
+        },
+        {
+          "tool": "search_charging_candidates",
+          "version": "1",
+          "inputHash": "58aac3b11b8bf8988360f215680bcc519553948a03c413dd875b19544f594a6f",
+          "snapshotId": "source-4ea3894d3aca2f124a4c9120c77f499c12d59f93e65cde39fe32298b2a1f0e69",
+          "durationMs": 1,
+          "error": null
+        },
+        {
+          "tool": "get_cost_parameters",
+          "version": "1",
+          "inputHash": "fbb27dfae8f5550f88bbc8a40fc276b7d8b79ced00f7a8bb9713e35165693831",
+          "snapshotId": "source-7ab3c52a9bf663042f4849e053979f1ca5a42adc1495baff7ff7193a966ce813",
+          "durationMs": 0,
+          "error": null
+        }
+      ]
+    },
+    {
+      "rounds": 1,
+      "tokens": 793,
+      "modelVersion": "gemini-2.5-flash",
+      "durationMs": 1362,
+      "error": null,
+      "tools": [
+        {
+          "tool": "get_vehicle_profile",
+          "version": "1",
+          "inputHash": "5477675fcf079e0f0a4bf97d623605752364f38a9daecce8ebd2dc4f39bc6ed8",
+          "snapshotId": "source-558dd1cd777aaeb90aa8f4b69a520fbeb0c57a1c103be7a8442054d8bc438834",
+          "durationMs": 1,
+          "error": null
+        },
+        {
+          "tool": "search_charging_candidates",
+          "version": "1",
+          "inputHash": "58aac3b11b8bf8988360f215680bcc519553948a03c413dd875b19544f594a6f",
+          "snapshotId": "source-4ea3894d3aca2f124a4c9120c77f499c12d59f93e65cde39fe32298b2a1f0e69",
+          "durationMs": 2,
+          "error": null
+        },
+        {
+          "tool": "get_cost_parameters",
+          "version": "1",
+          "inputHash": "fbb27dfae8f5550f88bbc8a40fc276b7d8b79ced00f7a8bb9713e35165693831",
+          "snapshotId": "source-2ab43fe46476ea5ed484d1f5936ee194350e48215ee26790de94d8c5989fbce4",
+          "durationMs": 0,
+          "error": null
+        }
+      ]
+    }
+  ],
+  "persistedTokens": 2372,
+  "billingBasis": "User confirmed Free tier with paid billing disabled. Both USD caps are zero; no paid fallback. Not a billing-account API audit."
+}

@@ -1,0 +1,42 @@
+{
+  "retrievedAt": "2026-09-07",
+  "note": "Original official site assets, copied without pixel edits. Copyright belongs to original rights holders.",
+  "assets": [
+    {
+      "file": "logo-toyota.png",
+      "url": "https://www.toyota.com.tw/images/logo/logo-toyota@3x.png",
+      "sourcePage": "https://www.toyota.com.tw/",
+      "sha256": "4ff9466e546efcfb3142cda7fb3823d60689cd5b6e6c20819254452a88dac351"
+    },
+    {
+      "file": "yaris-cross.png",
+      "url": "https://hotaicdn.azureedge.net/toyotaweb/CAR_20230926181848GCJD8D9A.png",
+      "sourcePage": "https://www.toyota.com.tw/",
+      "sha256": "6b922e64b47ebdd011a099ba3c8ef12e13cc6755f6897f6b885dd3c8f6c13c8d"
+    },
+    {
+      "file": "rav4-adventure.png",
+      "url": "https://hotaicdn.azureedge.net/toyotaweb/CAR_202601081657007M78CC60.png",
+      "sourcePage": "https://www.toyota.com.tw/",
+      "sha256": "833928dc91703afe1453781c89a3640e786f15398f833996028b8b2ee45cd133"
+    },
+    {
+      "file": "hilux.png",
+      "url": "https://hotaicdn.azureedge.net/toyotaweb/CAR_2026063014012543342143.png",
+      "sourcePage": "https://www.toyota.com.tw/",
+      "sha256": "722e22b10c28c744f7eb242271f924e8811d0ac7e0b0944b0090756b29582b2a"
+    },
+    {
+      "file": "bz4x-exterior.jpg",
+      "url": "https://hotaicdn.azureedge.net/toyotaweb/CMS_20251025174018M9FPCNE6.jpg",
+      "sourcePage": "https://www.toyota.com.tw/showroom/bZ4X/",
+      "sha256": "ec63c52cbf4d2a77c2e096860e190e5270198af2a0226694b9f48443f4259f31"
+    },
+    {
+      "file": "bz4x-driving.jpg",
+      "url": "https://hotaicdn.azureedge.net/toyotaweb/CMS_20251025174009138A8NPG.jpg",
+      "sourcePage": "https://www.toyota.com.tw/showroom/bZ4X/",
+      "sha256": "f2507859f899c16b339191e50813342959255da71d3197fd0186e8763f96abc4"
+    }
+  ]
+}

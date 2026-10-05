@@ -1,0 +1,60 @@
+{
+  "version": "engineering-v0.1",
+  "status": "Engineering demonstration assumptions; not Toyota vehicle specifications or validated advice",
+  "usableRangeKm": 300,
+  "longTripMinimumStopMinutes": 30,
+  "publicMinimumCompatibleStations": 2,
+  "routeOrder": [
+    "ready",
+    "home_install_required",
+    "public_charging_ready",
+    "not_ready"
+  ],
+  "publicPreferenceValue": "公司周邊公共充電",
+  "scores": {
+    "pass": 10,
+    "conditional": 40,
+    "unknown": 65,
+    "fail": 90
+  },
+  "energyKwhPer100Km": 18,
+  "chargingLossFraction": 0.1,
+  "homePriceTwdPerKwh": [
+    3,
+    5
+  ],
+  "publicPriceTwdPerKwh": [
+    8,
+    12
+  ],
+  "tco": {
+    "version": "tco-scenario-1",
+    "bz4xPriceTwd": 1280000,
+    "bz4xAnnualMaintenanceTwd": 4000,
+    "bz4xAnnualTaxTwd": 0,
+    "gasPriceTwdPerL": 31.5,
+    "defaultHomeChargingPercent": 40,
+    "currentMaintenanceAgeRate": 0.06
+  },
+  "seedUpdatedAt": "2026-09-22T00:00:00Z",
+  "completenessFields": [
+    "vehicle",
+    "vehicleType",
+    "ownershipYears",
+    "home",
+    "work",
+    "leisure",
+    "parking",
+    "chargingMethod",
+    "homeCharging",
+    "workCharging",
+    "installAssessment",
+    "chargingWindow",
+    "distance",
+    "tripFrequency",
+    "longDistance",
+    "chargingStop",
+    "monthlyMileage",
+    "monthlyCost"
+  ]
+}

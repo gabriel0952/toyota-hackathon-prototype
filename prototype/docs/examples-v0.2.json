@@ -1,0 +1,640 @@
+{
+  "notice": "Generated synthetic examples; IDs are illustrative and not in a running database.",
+  "session": {
+    "id": "session-1ce66ed7d2db405f9e277c2d6ac61ef5",
+    "vehicle": "未提供車款",
+    "ownershipYears": 0,
+    "questionIndex": 0,
+    "revision": 0,
+    "fields": {},
+    "answers": [],
+    "reportFamilyId": "family-9a153b440e524ab5ad5a8aa38619db45"
+  },
+  "answerRequest": {
+    "contractVersion": "0.2",
+    "expectedRevision": 0,
+    "questionId": "charging",
+    "fields": {
+      "vehicle": {
+        "value": "RAV4",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "distance": {
+        "value": 18,
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "tripFrequency": {
+        "value": "幾乎沒有",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "homeCharging": {
+        "value": "unavailable",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "workCharging": {
+        "value": "unavailable",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "installAssessment": {
+        "value": "failed",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "home": {
+        "value": "台北市內湖區",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "chargingWindow": {
+        "value": "day",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "monthlyMileage": {
+        "value": 1200,
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "monthlyCost": {
+        "value": 4800,
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      }
+    }
+  },
+  "answerResponse": {
+    "answers": [
+      {
+        "questionId": "charging",
+        "fields": {
+          "vehicle": {
+            "value": "RAV4",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "distance": {
+            "value": 18.0,
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "tripFrequency": {
+            "value": "幾乎沒有",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "homeCharging": {
+            "value": "unavailable",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "workCharging": {
+            "value": "unavailable",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "installAssessment": {
+            "value": "failed",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "home": {
+            "value": "台北市內湖區",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "chargingWindow": {
+            "value": "day",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "monthlyMileage": {
+            "value": 1200.0,
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "monthlyCost": {
+            "value": 4800.0,
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          }
+        }
+      }
+    ],
+    "fields": {
+      "vehicle": {
+        "value": "RAV4",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "distance": {
+        "value": 18.0,
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "tripFrequency": {
+        "value": "幾乎沒有",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "homeCharging": {
+        "value": "unavailable",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "workCharging": {
+        "value": "unavailable",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "installAssessment": {
+        "value": "failed",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "home": {
+        "value": "台北市內湖區",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "chargingWindow": {
+        "value": "day",
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "monthlyMileage": {
+        "value": 1200.0,
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      "monthlyCost": {
+        "value": 4800.0,
+        "status": "provided",
+        "source": "user",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      }
+    },
+    "id": "session-1ce66ed7d2db405f9e277c2d6ac61ef5",
+    "ownershipYears": 0,
+    "questionIndex": 4,
+    "reportFamilyId": "family-9a153b440e524ab5ad5a8aa38619db45",
+    "revision": 1,
+    "vehicle": "RAV4"
+  },
+  "evaluationRequest": {
+    "sessionId": "session-1ce66ed7d2db405f9e277c2d6ac61ef5",
+    "expectedRevision": 1,
+    "contractVersion": "0.2"
+  },
+  "driverResponse": {
+    "contractVersion": "0.2",
+    "ruleVersion": "engineering-v0.1-557999daacf1",
+    "dataSnapshotIds": [
+      "vehicle-engineering-v1-f86b2e6f9f6e",
+      "stations-seed-v1-662e641b1f23",
+      "prices-engineering-v1-73f5aa2a64d7"
+    ],
+    "evaluationStatus": "assessed",
+    "path": "yellow",
+    "route": "public_charging_ready",
+    "pathLabel": "公共充電可轉",
+    "headline": "公共補電方案可支撐，仍需落實日常安排",
+    "summary": "依已提交條件與工程種子資料計算；非即時充電查詢或購車保證。",
+    "completeness": 56,
+    "vehicle": "RAV4",
+    "ownershipYears": 0,
+    "resistances": [
+      {
+        "id": "charging",
+        "title": "穩定補電",
+        "score": 40,
+        "status": "manageable",
+        "description": "住家／公司補電：不可用／不可用；裝樁初評：不可用",
+        "evidence": [
+          "住家／公司補電：不可用／不可用；裝樁初評：不可用",
+          "規則 engineering-v0.1-557999daacf1"
+        ],
+        "improvement": "確認主要補電安排"
+      },
+      {
+        "id": "cost",
+        "title": "能源成本",
+        "score": 10,
+        "status": "resolved",
+        "description": "每月里程 1200.0 km；費率為工程假設",
+        "evidence": [
+          "每月里程 1200.0 km；費率為工程假設",
+          "規則 engineering-v0.1-557999daacf1"
+        ],
+        "improvement": "補上里程與費率依據"
+      },
+      {
+        "id": "public",
+        "title": "公共備援",
+        "score": 10,
+        "status": "resolved",
+        "description": "台北市內湖區，符合接頭與時段 2 站（工程種子）",
+        "evidence": [
+          "台北市內湖區，符合接頭與時段 2 站（工程種子）",
+          "規則 engineering-v0.1-557999daacf1"
+        ],
+        "improvement": "確認時段及相容主站與替代站"
+      }
+    ],
+    "monthlyCost": {
+      "status": "estimated",
+      "min": 1920,
+      "max": 2880,
+      "note": "工程假設區間；不含車價、設備、保險。油資僅作現況參考。",
+      "unit": "TWD/month",
+      "inputs": {
+        "monthlyKm": 1200.0,
+        "kwhPer100Km": 18,
+        "lossFraction": 0.1,
+        "priceLow": 8,
+        "priceHigh": 12
+      },
+      "formula": "monthlyKm × kwhPer100Km / 100 / (1-lossFraction) × price"
+    },
+    "chargingDataStatus": "available",
+    "plans": [
+      {
+        "name": "Plan A",
+        "title": "公共充電可轉",
+        "description": "依條件落實補電安排；站點為工程種子。",
+        "timing": "day"
+      }
+    ],
+    "journeys": [
+      {
+        "label": "通勤",
+        "title": "每日往返 36 km",
+        "detail": "長途、時段及備援依上述證據檢核"
+      }
+    ],
+    "assumptions": [
+      "車規與費率為工程假設，尚未驗證特定年式",
+      "站點為種子，非真實可用性",
+      "目前判定：公共充電可轉"
+    ],
+    "sources": [
+      {
+        "label": "車規工程假設（非特定年式 bZ4X 官方數值）",
+        "status": "fixture",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      {
+        "label": "充電種子區域：台北市內湖區",
+        "status": "fixture",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      {
+        "label": "能源費率工程假設",
+        "status": "fixture",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      }
+    ],
+    "recommendations": [
+      "可依這份條件報告與顧問討論 bZ4X；適配仍需官方車規驗證"
+    ],
+    "successCases": [],
+    "nextActions": [
+      {
+        "label": "諮詢充電條件",
+        "kind": "consult"
+      },
+      {
+        "label": "討論路線試駕",
+        "kind": "test-drive"
+      }
+    ],
+    "blurredLocations": [
+      "台北市內湖區",
+      "未提供區域",
+      "未提供區域"
+    ],
+    "pendingConfirmations": [],
+    "id": "report-ae941c5c576b421699f8a11e3708553e",
+    "sessionId": "session-1ce66ed7d2db405f9e277c2d6ac61ef5",
+    "reportFamilyId": "family-9a153b440e524ab5ad5a8aa38619db45",
+    "version": 1,
+    "createdAt": "2026-09-22T04:37:42.534325+00:00",
+    "inputRevision": 1,
+    "kind": "actual",
+    "basedOnReportId": null,
+    "changeSummary": []
+  },
+  "simulationRequest": {
+    "type": "home-charger-approved",
+    "value": true
+  },
+  "simulationResponse": {
+    "contractVersion": "0.2",
+    "ruleVersion": "engineering-v0.1-557999daacf1",
+    "dataSnapshotIds": [
+      "vehicle-engineering-v1-f86b2e6f9f6e",
+      "stations-seed-v1-662e641b1f23",
+      "prices-engineering-v1-3f20d517de35"
+    ],
+    "evaluationStatus": "assessed",
+    "path": "green",
+    "route": "ready",
+    "pathLabel": "可立即轉電",
+    "headline": "穩定補電與行程條件已通過示範規則",
+    "summary": "依已提交條件與工程種子資料計算；非即時充電查詢或購車保證。",
+    "completeness": 56,
+    "vehicle": "RAV4",
+    "ownershipYears": 0,
+    "resistances": [
+      {
+        "id": "charging",
+        "title": "穩定補電",
+        "score": 10,
+        "status": "resolved",
+        "description": "住家／公司補電：可用／不可用；裝樁初評：不可用",
+        "evidence": [
+          "住家／公司補電：可用／不可用；裝樁初評：不可用",
+          "規則 engineering-v0.1-557999daacf1"
+        ],
+        "improvement": "確認主要補電安排"
+      },
+      {
+        "id": "cost",
+        "title": "能源成本",
+        "score": 10,
+        "status": "resolved",
+        "description": "每月里程 1200.0 km；費率為工程假設",
+        "evidence": [
+          "每月里程 1200.0 km；費率為工程假設",
+          "規則 engineering-v0.1-557999daacf1"
+        ],
+        "improvement": "補上里程與費率依據"
+      },
+      {
+        "id": "public",
+        "title": "公共備援",
+        "score": 10,
+        "status": "resolved",
+        "description": "台北市內湖區，符合接頭與時段 2 站（工程種子）",
+        "evidence": [
+          "台北市內湖區，符合接頭與時段 2 站（工程種子）",
+          "規則 engineering-v0.1-557999daacf1"
+        ],
+        "improvement": "確認時段及相容主站與替代站"
+      }
+    ],
+    "monthlyCost": {
+      "status": "estimated",
+      "min": 720,
+      "max": 1200,
+      "note": "工程假設區間；不含車價、設備、保險。油資僅作現況參考。",
+      "unit": "TWD/month",
+      "inputs": {
+        "monthlyKm": 1200.0,
+        "kwhPer100Km": 18,
+        "lossFraction": 0.1,
+        "priceLow": 3,
+        "priceHigh": 5
+      },
+      "formula": "monthlyKm × kwhPer100Km / 100 / (1-lossFraction) × price"
+    },
+    "chargingDataStatus": "available",
+    "plans": [
+      {
+        "name": "Plan A",
+        "title": "可立即轉電",
+        "description": "依條件落實補電安排；站點為工程種子。",
+        "timing": "day"
+      }
+    ],
+    "journeys": [
+      {
+        "label": "通勤",
+        "title": "每日往返 36 km",
+        "detail": "長途、時段及備援依上述證據檢核"
+      }
+    ],
+    "assumptions": [
+      "車規與費率為工程假設，尚未驗證特定年式",
+      "站點為種子，非真實可用性",
+      "目前判定：可立即轉電"
+    ],
+    "sources": [
+      {
+        "label": "車規工程假設（非特定年式 bZ4X 官方數值）",
+        "status": "fixture",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      {
+        "label": "充電種子區域：台北市內湖區",
+        "status": "fixture",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      },
+      {
+        "label": "能源費率工程假設",
+        "status": "fixture",
+        "updatedAt": "2026-09-22T00:00:00Z"
+      }
+    ],
+    "recommendations": [
+      "可依這份條件報告與顧問討論 bZ4X；適配仍需官方車規驗證"
+    ],
+    "successCases": [],
+    "nextActions": [
+      {
+        "label": "諮詢充電條件",
+        "kind": "consult"
+      },
+      {
+        "label": "討論路線試駕",
+        "kind": "test-drive"
+      }
+    ],
+    "blurredLocations": [
+      "台北市內湖區",
+      "未提供區域",
+      "未提供區域"
+    ],
+    "pendingConfirmations": [],
+    "id": "report-9234b2a9f8b74476bca550438ad79bfb",
+    "sessionId": "session-1ce66ed7d2db405f9e277c2d6ac61ef5",
+    "reportFamilyId": "family-9a153b440e524ab5ad5a8aa38619db45",
+    "version": 2,
+    "createdAt": "2026-09-22T04:37:42.536754+00:00",
+    "inputRevision": 1,
+    "kind": "simulation",
+    "basedOnReportId": "report-ae941c5c576b421699f8a11e3708553e",
+    "changeSummary": [
+      "住家充電：無法使用 → 已可使用"
+    ]
+  },
+  "errors": [
+    {
+      "method": "GET",
+      "url": "/api/v1/reports/missing",
+      "request": null,
+      "status": 404,
+      "response": {
+        "detail": "找不到此報告版本"
+      }
+    },
+    {
+      "method": "GET",
+      "url": "/api/v1/reports/report-ae941c5c576b421699f8a11e3708553e?role=advisor",
+      "request": null,
+      "status": 403,
+      "response": {
+        "detail": "需要顧問身分"
+      }
+    },
+    {
+      "method": "PUT",
+      "url": "/api/v1/sessions/session-1ce66ed7d2db405f9e277c2d6ac61ef5/answers",
+      "request": {
+        "contractVersion": "0.2",
+        "expectedRevision": 0,
+        "questionId": "charging",
+        "fields": {
+          "vehicle": {
+            "value": "RAV4",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "distance": {
+            "value": 18,
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "tripFrequency": {
+            "value": "幾乎沒有",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "homeCharging": {
+            "value": "unavailable",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "workCharging": {
+            "value": "unavailable",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "installAssessment": {
+            "value": "failed",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "home": {
+            "value": "台北市內湖區",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "chargingWindow": {
+            "value": "day",
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "monthlyMileage": {
+            "value": 1200,
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          },
+          "monthlyCost": {
+            "value": 4800,
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          }
+        }
+      },
+      "status": 409,
+      "response": {
+        "detail": "條件已有新版，請重新載入"
+      }
+    },
+    {
+      "method": "PUT",
+      "url": "/api/v1/sessions/session-1ce66ed7d2db405f9e277c2d6ac61ef5/answers",
+      "request": {
+        "expectedRevision": 1,
+        "fields": {
+          "invalid": {
+            "value": true,
+            "status": "provided",
+            "source": "user",
+            "updatedAt": "2026-09-22T00:00:00Z"
+          }
+        }
+      },
+      "status": 422,
+      "response": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body"
+            ],
+            "msg": "Value error, Unknown field invalid",
+            "input": {
+              "expectedRevision": 1,
+              "fields": {
+                "invalid": {
+                  "value": true,
+                  "status": "provided",
+                  "source": "user",
+                  "updatedAt": "2026-09-22T00:00:00Z"
+                }
+              }
+            },
+            "ctx": {
+              "error": {}
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
